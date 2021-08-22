@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #282828;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+small {
+  display: block;
+}
+
+.clickme {
+  height: 35rem;
+  width: 21rem;
+  max-width: 100%;
+  background: url("https://source.unsplash.com/collection/402398") no-repeat
+    center center/cover;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3),
+    0 0 10px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+.fab {
+  color: red;
+}
+
+.clickme .fab {
+  position: absolute;
+  animation: grow 0.8s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.source {
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+.source:hover {
+  opacity: 0.8;
+}
+.source a {
+  text-decoration: none;
+  color: #aaa;
+  /* font-size: 0.8rem; */
+}
+.likes {
+  font-size: 0.9rem;
+}
+.times {
+  font-size: 1rem;
+}
+
+.reloadBtn {
+  background-color: #474747;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  padding: 0.25rem 0.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 1000px;
+  opacity: 0.8;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.reloadBtn:hover {
+  opacity: 1;
+}
+.reloadBtn:active {
+  transform: scale(0.8);
+}
+.reloadBtn:focus {
+  outline: none;
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10) rotate(0deg);
+    opacity: 0;
+  }
+}
