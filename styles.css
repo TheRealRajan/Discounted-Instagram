@@ -25,7 +25,7 @@ small {
 }
 
 .clickme {
-  height: 35rem;
+  height: 37rem;
   width: 21rem;
   max-width: 100%;
   background: url("https://source.unsplash.com/collection/402398") no-repeat
@@ -50,9 +50,9 @@ small {
 
 .source {
   color: #aaa;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   opacity: 0.5;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .source:hover {
   opacity: 0.8;
