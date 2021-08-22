@@ -26,7 +26,8 @@ small {
 
 .clickme {
   height: 37rem;
-  width: 21rem;
+  /* max-height: 39rem; */
+  width: 20.5rem;
   max-width: 100%;
   background: url("https://source.unsplash.com/collection/402398") no-repeat
     center center/cover;
@@ -74,7 +75,7 @@ small {
   margin-left: 0.5rem;
   font-size: 0.8rem;
   font-family: inherit;
-  padding: 0.25rem 0.4rem;
+  padding: 0.25rem 0.75rem;
   color: #fff;
   border: none;
   border-radius: 1000px;
@@ -96,5 +97,12 @@ small {
   to {
     transform: translate(-50%, -50%) scale(10) rotate(0deg);
     opacity: 0;
+  }
+}
+
+@media (min-height: 700px) {
+  .clickme {
+    height: 41rem;
+    width: 22rem;
   }
 }
